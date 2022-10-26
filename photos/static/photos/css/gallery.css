@@ -1,0 +1,17 @@
+.gallery {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+
+    width: 33%;
+    margin-bottom: 0.3rem;
+    object-fit: cover;
+    object-position: center;
+    width: 33%;
+    aspect-ratio : 1 / 1;
+}
