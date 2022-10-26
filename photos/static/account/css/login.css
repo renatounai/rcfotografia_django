@@ -46,6 +46,7 @@
     cursor: pointer;
 }
 
+/* TODO - Passar este css de erro para um arquivo próprio */
 .form__login__error {
     font-size: 0.8rem;
     border: 2px solid #f52121;

@@ -10,11 +10,15 @@
 {% block content %}
     <section class="profile container">
         <section class="profile__image">
+            {# TODO - buscar a image do cadastro do usuário #}
             <img src="{% static 'photos/images/profile.png' %}" alt="Foto de perfil do usuário"/>
         </section>
 
         <section class="profile__user">
+            {# TODO - Obter o nome do cadastro do usuário #}
             <h1 class="profile__user__name">Renato Custódio</h1>
+
+            {# TODO - Obter a bio do cadastro do usuário #}
             <p class="profile__user__bio">
                 Fotógrafo especialista em ensaios sensuais e boudoir! 📸✨<br/>
                 - Faça agora mesmo o seu orçamento e viva um momento único!<br/>
@@ -23,6 +27,7 @@
         </section>
     </section>
 
+    {# TODO - Obter a lista de publicações do banco de dados #}
     <section class="gallery container">
         <img class="gallery__photo" loading=lazy src="https://live.staticflickr.com/65535/52210400420_c088d6ebea_h.jpg" alt="Image1"/>
         <img class="gallery__photo" loading=lazy src="https://picsum.photos/300/300" alt="Image2"/>
