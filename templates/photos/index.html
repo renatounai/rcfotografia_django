@@ -4,6 +4,7 @@
 {% block head_title %} RC Fotografia {% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'photos/css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'photos/css/gallery.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -21,5 +22,11 @@
                 - Fale comigo no WhatsApp
             </p>
         </section>
+    </section>
+
+    <section class="gallery container">
+        <img class="gallery__photo" loading=lazy src="https://live.staticflickr.com/65535/52210400420_c088d6ebea_h.jpg" alt="Image1"/>
+        <img class="gallery__photo" loading=lazy src="https://picsum.photos/300/300" alt="Image2"/>
+        <img class="gallery__photo" loading=lazy src="https://picsum.photos/300/300" alt="Image2"/>
     </section>
 {% endblock %}
