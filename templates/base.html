@@ -24,7 +24,7 @@
             <div class="header__sign">
                 {% if user.is_authenticated %}
                     {% if user.is_authenticated %}
-                        {{ user.username }}
+                        <span class="header__user">{{ user.email }}</span>
                     {% endif %}
 
                     <a href="javascript: logout()" class="header__logout">
@@ -33,9 +33,6 @@
                 {% else %}
                     <a href="/accounts/login/" class="header__signin">
                         {% trans "Sign In" %}
-                    </a>
-                    <a href="" class="header__signup">
-                        Cadastrar-se
                     </a>
                 {% endif %}
             </div>
