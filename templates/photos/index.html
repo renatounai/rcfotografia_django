@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static i18n %}
+
+{% block head_title %} RC Fotografia {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'photos/css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="profile container">
+        <section class="profile__image">
+            <img src="{% static 'photos/images/profile.png' %}" alt="Foto de perfil do usuário"/>
+        </section>
+
+        <section class="profile__user">
+            <h1 class="profile__user__name">Rafael Cunha</h1>
+            <p class="profile__user__bio">
+                Estúdio de fotografia, Ensaios e Eventos! 📸✨<br/>
+                - Atendimento com hora marcada!<br/>
+                - Reserve seu horário!<br/>
+                - Fale comigo no WhatsApp
+            </p>
+        </section>
+    </section>
+{% endblock %}

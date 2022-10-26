@@ -1,0 +1,60 @@
+:root {
+    --form-login-height: 200px;
+}
+
+/* Set the variable --width */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh + 2rem - var(--form-login-height) / 2);
+    width: 250px;
+}
+
+.login__titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    border: 1px solid #d7ccba;
+    padding: 1rem;
+}
+
+.form__login__buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__login__buttons__forgot-password, .form__login__buttons__remember {
+    font-size: 0.8rem;
+    color: #4a4a4a;
+}
+
+.form__login__buttons__remember label, .form__login__buttons__remember input {
+    cursor: pointer;
+}
+
+.form__login__buttons__signin {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.form__login__error {
+    font-size: 0.8rem;
+    border: 2px solid #f52121;
+    color: #f52121;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2%;
+}
+
+#id_remember {
+    vertical-align: middle;
+}

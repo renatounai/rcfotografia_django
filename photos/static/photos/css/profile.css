@@ -1,0 +1,31 @@
+.profile {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #d7ccba;
+}
+.profile__image {
+    height: 10rem;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+.profile__image img {
+    border-radius: 50%;
+}
+.profile__user {
+    display: flex;
+    flex-direction: column;
+}
+.profile__user__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.profile__user__bio {
+    font-size: 1rem;
+    display: flex;
+    margin-top: 0.5rem;
+}
