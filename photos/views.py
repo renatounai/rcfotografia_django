@@ -3,8 +3,8 @@ from django.shortcuts import render
 from photos.models import Photo
 
 
-# Create your views here.
-# a view for the index.html page
+# TODO - Alterar para usar Class Based Views
+# TODO - Passar a colocar cada view em um arquivo separado
 def index(request):
     photos = Photo.objects.all()
     padding = 3 - len(photos) % 3
