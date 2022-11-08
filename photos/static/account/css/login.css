@@ -13,11 +13,6 @@
     width: 250px;
 }
 
-.login__titulo {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
 .form__login {
     display: flex;
     flex-direction: column;

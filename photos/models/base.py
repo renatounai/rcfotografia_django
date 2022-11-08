@@ -5,16 +5,16 @@ class BaseModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def save(self):
+    def save(self, **kwargs):
         self.before_save()
         self.full_clean()
-        super().save()
+        super().save(**kwargs)
         self.after_save()
 
-    def delete(self):
+    def delete(self, **kwargs):
         self.before_delete()
         try:
-            return super().delete()
+            return super().delete(**kwargs)
         finally:
             self.after_delete()
 

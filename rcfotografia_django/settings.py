@@ -111,7 +111,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = (os.path.join('static'), )
 
-MEDIA_ROOT = '/home/renato/Pictures/rcfotografia_django/media/'
+MEDIA_ROOT = env('media_folder')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

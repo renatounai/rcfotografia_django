@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     width: 975px;
     align-items: center;
 }
@@ -55,18 +54,6 @@
     padding: 0.5rem 1rem;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.header__signup {
-    background-color: #4a4a4a;
-    border-radius: 0.25rem;
-    color: #d7ccba;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 1em;
 }
 
 /*query size for less than 415px*/
