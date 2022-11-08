@@ -27,13 +27,13 @@
             {% endif %}
 
             <div class="form-group">
-                <input type="text" name="login" maxlength="150" id="id_login" required/>
+                <input type="text" name="login" maxlength="150" id="id_login" value="{{ form.login.value|default_if_none:"" }}" required/>
                 <label for="id_login">Nome de usuário</label>
                 <span></span>
             </div>
 
             <div class="form-group">
-                <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                <input type="password" name="password" autocomplete="current-password" value="{{ form.password.value|default_if_none:"" }}" required="" id="id_password">
                 <label for="id_password">Senha</label>
                 <span></span>
             </div>

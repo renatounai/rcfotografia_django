@@ -22,10 +22,7 @@
             </p>
         </section>
     </section>
+    {% include 'photos/gallery.html' %}
+    <script src="{% static 'photos/js/gallery.js' %}"></script>
 
-    <section class="gallery container">
-        <img class="gallery__photo" loading=lazy src="https://live.staticflickr.com/65535/52210400420_c088d6ebea_h.jpg" alt="Image1"/>
-        <img class="gallery__photo" loading=lazy src="https://picsum.photos/300/300" alt="Image2"/>
-        <img class="gallery__photo" loading=lazy src="https://picsum.photos/300/300" alt="Image2"/>
-    </section>
 {% endblock %}

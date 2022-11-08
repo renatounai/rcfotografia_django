@@ -13,6 +13,6 @@ class Photo(BaseModel):
         null=True,
         width_field="width",
         height_field="height",)
-    album = models.ForeignKey('Album', on_delete=models.CASCADE, related_name='photos')
     width = models.IntegerField(editable=False)
     height = models.IntegerField(editable=False)
+    text = models.TextField(blank=True, null=True)

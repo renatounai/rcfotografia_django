@@ -1,9 +1,18 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+
+from photos.models import Photo
 
 
 # Create your views here.
 # a view for the index.html page
 def index(request):
-    return render(request, "photos/index.html")
+    photos = Photo.objects.all()
+    padding = 3 - len(photos) % 3
 
+    photos_padding = []
+    if padding < 3:
+        for i in range(padding):
+            photos_padding.append(Photo())
+
+    context = {'photos': photos, 'photos_padding': photos_padding}
+    return render(request, "photos/index.html", context)

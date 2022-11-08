@@ -1,0 +1,16 @@
+<section class="gallery container">
+    {% for photo in photos %}
+        <img class="gallery__photo" loading=lazy src="{{ photo.image.url }}" alt="Image1"/>
+    {% endfor %}
+
+    {% for photo in photos_padding %}
+        <img class="gallery__photo--invisible"></img>
+    {% endfor %}
+</section>
+
+<div class="modal" id="photo-modal">
+    <div class="modal-bg modal-exit"></div>
+    <div class="modal-container">
+        <img class="modal__img" src=""/>
+    </div>
+</div>

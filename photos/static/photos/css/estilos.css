@@ -8,6 +8,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 975px;
+    padding: 0 3px 0 3px;
 }
 
 .form__logout {
