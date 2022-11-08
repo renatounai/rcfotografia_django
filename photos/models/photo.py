@@ -16,6 +16,5 @@ class Photo(BaseModel):
         height_field="height",)
     width = models.IntegerField(editable=False)
     height = models.IntegerField(editable=False)
-    text = models.TextField(blank=True, null=True)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, null=False)
 

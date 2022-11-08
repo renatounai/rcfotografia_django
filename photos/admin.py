@@ -5,7 +5,7 @@ from photos.models.photo import Photo
 
 
 class PhotoAdmin(admin.ModelAdmin):
-    list_display = ('image_tag', 'text',)
+    list_display = ('image_tag',)
     readonly_fields = ('width', 'height')
 
     @staticmethod
