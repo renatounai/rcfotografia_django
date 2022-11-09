@@ -1,7 +1,8 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
 
-from photos.models import Post
+from photos.models import Post, User
 from photos.models.photo import Photo
 
 
@@ -16,3 +17,4 @@ class PhotoAdmin(admin.ModelAdmin):
 
 admin.site.register(Photo, PhotoAdmin)
 admin.site.register(Post)
+admin.site.register(User, UserAdmin)
