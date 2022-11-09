@@ -1,0 +1,12 @@
+.message-error {
+    font-size: 0.8rem;
+    border: 2px solid #f52121;
+    color: #f52121;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2%;
+}
+
+#id_remember {
+    vertical-align: middle;
+}
