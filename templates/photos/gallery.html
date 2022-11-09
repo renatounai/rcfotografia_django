@@ -3,7 +3,7 @@
         <img class="gallery__photo" loading=lazy src="{{ photo.image.url }}" alt="Image1"/>
     {% endfor %}
 
-    {% for photo in photos_padding %}
+    {% for _ in padding %}
         <img class="gallery__photo--invisible" alt="Photo" src="" />
     {% endfor %}
 </section>
