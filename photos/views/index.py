@@ -8,7 +8,7 @@ class IndexView(TemplateView):
     template_name = 'photos/index.html'
 
     def get(self, request):
-        photos = Photo.objects.all()
+        photos = Photo.objects.all().order_by('-created_at')
         padding = 3 - len(photos) % 3
         if padding == 3:
             padding = 0
