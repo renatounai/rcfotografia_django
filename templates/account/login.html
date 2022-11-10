@@ -4,6 +4,8 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'account/css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'shared/forms/css/forms.css' %}">
+    <link rel="stylesheet" href="{% static 'shared/forms/css/messages.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -15,13 +17,13 @@
             {% if form.errors %}
                 {% for field in form %}
                     {% for error in field.errors %}
-                        <div class="form__login__error">
+                        <div class="message-error">
                             <strong>{{ error|escape }}</strong>
                         </div>
                     {% endfor %}
                 {% endfor %}
                 {% for error in form.non_field_errors %}
-                    <div class="form__login__error">
+                    <div class="message-error">
                         <strong>{{ error|escape }}</strong>
                     </div>
                 {% endfor %}
