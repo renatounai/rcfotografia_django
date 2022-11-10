@@ -7,7 +7,7 @@
     flex-direction: row;
     padding: 1rem 0 1rem;
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 .header .container {
@@ -58,7 +58,11 @@
 
 /*query size for less than 415px*/
 @media only screen and (max-width: 415px) {
-  .header .container {
-    flex-direction: column;
-  }
+    .header .container {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        display: none;
+    }
 }

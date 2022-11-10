@@ -54,3 +54,7 @@
 #id_remember {
     vertical-align: middle;
 }
+
+.header__signin {
+    visibility: hidden;
+}
