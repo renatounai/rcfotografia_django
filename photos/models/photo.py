@@ -7,7 +7,7 @@ from photos.models.post import Post
 
 class Photo(BaseModel):
     image = ResizedImageField(
-        size=[2048, 2048],
+        size=[1024, 1024],
         quality=80,
         upload_to='photos',
         blank=True,
