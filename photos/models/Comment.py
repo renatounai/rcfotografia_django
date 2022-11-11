@@ -18,7 +18,7 @@ class Comment(BaseModel):
         related_query_name='comment',
         null=False,
         blank=False)
-    text = models.TextField(blank=True, null=False, default='', max_length=1000)
+    text = models.TextField(blank=False, null=False, default='', max_length=1000)
 
     def __str__(self):
         return f'{self.user} commented {self.post}'
