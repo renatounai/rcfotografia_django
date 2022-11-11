@@ -19,5 +19,3 @@ class Post(BaseModel):
         tags = [Tag.objects.get_or_create(name=tag) for tag in tags_in_the_current_text]
         for tag in tags:
             TagPost.objects.create(tag=tag, post=self)
-
-        super().after_save()
