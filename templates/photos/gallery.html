@@ -3,6 +3,7 @@
         <img class="gallery__photo" loading=lazy src="{{ photo.image.url }}" alt="Image1"/>
     {% endfor %}
 
+    {# Este loop tem o objeto de adicionar imagens invisiveis quando a quantidade de imagens não for multiplo de 3, para que o layout não quebre.  #}
     {% for _ in padding %}
         <img class="gallery__photo--invisible" alt="Photo" src="" />
     {% endfor %}
