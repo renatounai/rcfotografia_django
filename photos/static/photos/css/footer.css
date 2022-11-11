@@ -1,0 +1,29 @@
+.footer, fake-footer {
+    border-top: 1px solid #d7ccba;
+    padding: 0.5rem 0 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fake-footer {
+    visibility: hidden;
+    height: 6em;
+}
+
+.footer__commands {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer__commands__upload {
+    display: flex;
+}
+
+.footer__commands__upload img {
+    height: 2rem;
+    color: #f52121;
+    filter: invert(99%) sepia(2%) saturate(5331%) hue-rotate(315deg) brightness(90%) contrast(84%);
+}

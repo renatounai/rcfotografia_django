@@ -1,0 +1,26 @@
+{% load static i18n %}
+<header class="header">
+    <div class="container">
+        <a href="/" class="header__logo">
+            <img src="{% static 'photos/images/camera.svg' %}" class="header__logo__icone" alt="Logo de uma câmera"/>
+            <h1 class="header__logo__texto">RC Fotografia</h1>
+        </a>
+
+        <div class="header__sign">
+            {% if user.is_authenticated %}
+                {% if user.is_authenticated %}
+                    <span class="header__user">{{ user.email }}</span>
+                {% endif %}
+
+                <a href="javascript: logout()" class="header__logout">
+                    Sair
+                </a>
+            {% else %}
+                <a href="/accounts/login/" class="header__signin">
+                    <img src="{% static 'photos/images/box-arrow-right.svg' %}" />
+                </a>
+            {% endif %}
+        </div>
+
+    </div>
+</header>
