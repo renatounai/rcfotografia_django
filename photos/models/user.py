@@ -15,4 +15,4 @@ class User(AbstractUser):
     bio = models.TextField(blank=True, null=False, default='', max_length=1000)
 
     def __str__(self):
-        return self.email
+        return self.name

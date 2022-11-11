@@ -18,3 +18,6 @@ class Photo(BaseModel):
     height = models.IntegerField(editable=False)
     post = models.ForeignKey(Post, on_delete=models.CASCADE, null=False)
 
+    def __str__(self):
+        return f'Photo {self.image.name}-{self.width}x{self.height}'
+

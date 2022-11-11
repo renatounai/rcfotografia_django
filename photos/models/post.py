@@ -9,6 +9,9 @@ class Post(BaseModel):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=False)
     text = models.TextField(blank=True, null=False, default='', max_length=1000)
 
+    def __str__(self):
+        return f'{self.user} - {self.text[:25]}'
+
     def after_save(self):
         from photos.models.TagPost import TagPost
 
