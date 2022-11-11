@@ -10,8 +10,7 @@
 
 {% block content %}
     <section class="login container">
-        {# TODO - Realizar a validação do formulário com javascript antes de submeter #}
-        <form class="form__login" method="POST" action="{% url 'account_login' %}">
+        <form class="form__login" method="POST" action="{% url 'account_login' %}" onsubmit="return validate();">
             {% csrf_token %}
 
             {% if form.errors %}
